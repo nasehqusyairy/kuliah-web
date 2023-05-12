@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluasi Kinerja</title>
+</head>
+
+<body>
+  <form action="proses.php" method="post">
+    <table border="1" cellspacing="0">
+      <thead>
+        <tr>
+          <th align="left" colspan="3">
+            B. Evaluasi Kinerja
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3">Arti Nilai</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td colspan="2">: sangat tidak baik/ sangat rendah/ tidak pernah</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td colspan="2">: tidak baik/ rendah/ jarang</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td colspan="2">: biasa/ cukup/ kadang-kadang</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td colspan="2">: baik/ tinggi/ sering</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td colspan="2">: sangat baik/ sangat tinggi/ selalu</td>
+        </tr>
+
+        <tr>
+          <th>No. </th>
+          <th>Kriteria</th>
+          <th>Nilai</th>
+        </tr>
+        <tr align="left">
+          <th colspan="3">B.1 Mahasiswa</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Rerata kemampuan kognitif</td>
+          <td>
+            <label>
+              <input type="radio" name="kognitif" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="kognitif" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="kognitif" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="kognitif" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="kognitif" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rerata kemampuan afektif</td>
+          <td>
+            <label>
+              <input type="radio" name="afektif" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="afektif" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="afektif" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="afektif" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="afektif" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Kedisiplinan/ ketepatan pengumpulan tugas (jika tidak ada, nilai = 1)</td>
+          <td>
+            <label>
+              <input type="radio" name="kedisiplinan" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="kedisiplinan" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="kedisiplinan" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="kedisiplinan" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="kedisiplinan" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ketertiban/ suasana kelas</td>
+          <td>
+            <label>
+              <input type="radio" name="ketertiban" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="ketertiban" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="ketertiban" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="ketertiban" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="ketertiban" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+
+        <tr align="left">
+          <th colspan="3">B.2 Dosen (Evaluasi dari dalam PBM)</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Pembahasan latihan soal</td>
+          <td>
+            <label>
+              <input type="radio" name="pembahasan" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="pembahasan" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="pembahasan" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="pembahasan" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="pembahasan" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Kualitas diskusi dan tanya jawab</td>
+          <td>
+            <label>
+              <input type="radio" name="diskusi" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="diskusi" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="diskusi" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="diskusi" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="diskusi" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Kemampuan menjelaskan materi</td>
+          <td>
+            <label>
+              <input type="radio" name="materi" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="materi" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="materi" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="materi" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="materi" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Penguasaan materi kuliah</td>
+          <td>
+            <label>
+              <input type="radio" name="penguasaan" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="penguasaan" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="penguasaan" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="penguasaan" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="penguasaan" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Kemampuan menjawab pertanyaan</td>
+          <td>
+            <label>
+              <input type="radio" name="menjawab" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="menjawab" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="menjawab" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="menjawab" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="menjawab" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Penguasaan kelas</td>
+          <td>
+            <label>
+              <input type="radio" name="kelas" value="1">
+              1
+            </label>
+            <label>
+              <input type="radio" name="kelas" value="2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="kelas" value="3">
+              3
+            </label>
+            <label>
+              <input type="radio" name="kelas" value="4">
+              4
+            </label>
+            <label>
+              <input type="radio" name="kelas" value="5">
+              5
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3"> &raquo; Keterlambatan waktu mengajar :</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label><input type="radio" name="keterlambatan" value="&ge;20">&ge;20 menit</label>
+            <label><input type="radio" name="keterlambatan" value="11-20">11-20menit</label>
+            <label><input type="radio" name="keterlambatan" value="1-10">1-10 menit</label>
+            <label><input type="radio" name="keterlambatan" value="Tepat waktu">Tepat Waktu menit</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">&raquo; Jumlah mahasiswa yang terlambat :</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label><input type="radio" name="mahasiswa" value="&ge;6">&ge; 6 mhs</label>
+            <label><input type="radio" name="mahasiswa" value="2-5">2-5 mhs</label>
+            <label><input type="radio" name="mahasiswa" value="1-2">1-2 mhs</label>
+            <label><input type="radio" name="mahasiswa" value="Tidak ada">Tidak ada</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">&raquo; Pemberian sanksi mahasiswa bermasalah :
+            <label><input type="radio" name="sanksi" value="ya">Ya</label>
+            <label><input type="radio" name="sanksi" value="tidak">Tidak</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">Pembahasan tugas (jika ada):</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label><input type="radio" name="tugas" value="&lt; 25">
+              &lt; 25%</label>
+            <label><input type="radio" name="tugas" value="25-50">25 - 50 %</label>
+            <label><input type="radio" name="tugas" value="51-75">51 - 75 %</label>
+            <label><input type="radio" name="tugas" value="&gt;75">&gt;75%</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">&raquo; Tingakat kejenuhan mengajar hari ini:</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label><input type="radio" name="jenuh" value="sangat jenuh">Sangat Jenuh</label>
+            <label><input type="radio" name="jenuh" value="jenuh">Jenuh</label>
+            <label><input type="radio" name="jenuh" value="enjoy">Enjoy</label>
+            <label><input type="radio" name="jenuh" value="sangat enjoy">Sangat Enjoy</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><button>Ok</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+
+</html>

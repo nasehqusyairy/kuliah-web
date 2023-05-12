@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Gaji</title>
+</head>
+
+<body>
+  <form action="proses_gaji.php" method="post">
+    <label>
+      Nama :
+      <input type="text" name="nama">
+    </label><br><br>
+    <label>Golongan :
+      <select name="gaji_pokok">
+        <option value="1000000">I</option>
+        <option value="2000000">II</option>
+        <option value="2500000">III</option>
+        <option value="3000000">IV</option>
+      </select>
+    </label><br><br>
+    <label>Jabatan Fungsional :
+      <select name="tunjangan_fungsional">
+        <option value="400000">Asisten Ahli</option>
+        <option value="1000000">Lektor</option>
+        <option value="2000000">Lektor Kepala</option>
+        <option value="5000000">Guru Besar</option>
+      </select>
+    </label><br><br>
+    <label>Jabatan Struktural :
+      <select name="tunjangan_struktural">
+        <option value="5000000">Ketua Prodi</option>
+        <option value="4000000">Wakil Ketua Prodi</option>
+        <option value="10000000">Dekan</option>
+        <option value="7000000">Pembantu Dekan</option>
+        <option value="15000000">Rektor</option>
+        <option value="10000000">Pembantu Rektor</option>
+      </select>
+    </label><br><br>
+    <label>
+      Pinjaman :
+      <input type="number" name="pinjaman">
+    </label><br><br>
+    <button>submit</button>
+  </form>
+</body>
+
+</html>
